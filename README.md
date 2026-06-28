@@ -140,7 +140,10 @@ Ask questions related to the uploaded document.
 
 ## 📸 Screenshots
 
-Add screenshots of your application here.
+<img width="1896" height="893" alt="image" src="https://github.com/user-attachments/assets/b94d1ac7-ae17-42f1-b0f2-e505953d7893" />
+<img width="1898" height="882" alt="image" src="https://github.com/user-attachments/assets/b5745dce-514a-4351-a852-ba5f3c9a0c8c" />
+<img width="1892" height="781" alt="image" src="https://github.com/user-attachments/assets/d98f753d-b601-4a60-931b-353020607158" />
+
 
 ---
 
