@@ -1,16 +1,189 @@
-# React + Vite
+# 📄 DocMind-AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+link for the main website- https://melodious-gumdrop-ff9161.netlify.app
 
-Currently, two official plugins are available:
+An AI-powered PDF Question Answering application that allows users to upload PDF documents, ask questions, and receive intelligent answers generated using a Retrieval-Augmented Generation (RAG) pipeline.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📄 Upload PDF documents
+- 🤖 AI-powered question answering
+- 🧠 Retrieval-Augmented Generation (RAG)
+- 🔍 Semantic document search using embeddings
+- 💬 Interactive chat interface
+- ⚡ Fast and responsive React + Vite frontend
+- 🐍 Python backend with REST API
+- 📑 Markdown formatted AI responses
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🛠 Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- Axios
+- React Markdown
+- CSS
+
+### Backend
+- Python
+- FastAPI
+- LangChain
+- Sentence Transformers
+- FAISS Vector Store
+- PyPDF
+- Uvicorn
+
+---
+
+## 📂 Project Structure
+
+```
+DocMind-AI/
+│
+├── backend/
+│   ├── main.py
+│   ├── rag.py
+│   ├── pdf_loader.py
+│   ├── embeddings.py
+│   ├── vector_store.py
+│   └── llm.py
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── api.js
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## ⚙ Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/your-username/DocMind-AI.git
+cd DocMind-AI
+```
+
+---
+
+## Install Frontend
+
+```bash
+npm install
+```
+
+Run Frontend
+
+```bash
+npm run dev
+```
+
+---
+
+## Install Backend
+
+```bash
+cd backend
+
+pip install -r requirements.txt
+```
+
+Run Backend
+
+```bash
+uvicorn main:app --reload
+```
+
+---
+
+## 🌐 API Endpoint
+
+```
+POST /upload
+```
+
+Upload PDF documents.
+
+```
+POST /chat
+```
+
+Ask questions related to the uploaded document.
+
+---
+
+## 💡 How It Works
+
+1. Upload a PDF.
+2. PDF text is extracted.
+3. Text is converted into vector embeddings.
+4. Embeddings are stored in a FAISS vector database.
+5. User asks a question.
+6. Relevant document chunks are retrieved.
+7. LLM generates a contextual answer.
+8. Response is displayed in the chat interface.
+
+---
+
+## 📸 Screenshots
+
+Add screenshots of your application here.
+
+---
+
+## 🔮 Future Improvements
+
+- Multiple PDF support
+- User Authentication
+- Chat History
+- Cloud Storage
+- Citation & Source Highlighting
+- Dark Mode
+- Streaming AI Responses
+- Multi-language Support
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Developer
+
+**Aniket Kumar Singh**
+
+- AI & ML Student
+- Python Developer
+- Full Stack AI Enthusiast
+
+GitHub: https://github.com/aniket2910-abc
+
+---
+
+⭐ If you like this project, don't forget to give it a Star!
