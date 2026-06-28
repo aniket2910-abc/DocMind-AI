@@ -1,0 +1,1047 @@
+/* ===========================
+   Google Font
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+html,
+body,
+#root{
+  width:100%;
+  height:100%;
+}
+
+body{
+
+  background:
+  radial-gradient(circle at top left,#1d4ed8 0%,transparent 28%),
+  radial-gradient(circle at bottom right,#0f766e 0%,transparent 25%),
+  #020617;
+
+  color:white;
+  overflow:hidden;
+
+}
+
+/* ===========================
+      Main Layout
+=========================== */
+
+.container{
+
+  display:flex;
+  height:100vh;
+
+}
+
+/* ===========================
+        Sidebar
+=========================== */
+
+.sidebar{
+
+  width:310px;
+
+  padding:28px;
+
+  display:flex;
+  flex-direction:column;
+
+  background:rgba(15,23,42,.65);
+
+  backdrop-filter:blur(18px);
+
+  border-right:1px solid rgba(255,255,255,.08);
+
+  box-shadow:
+  0 0 40px rgba(0,0,0,.45);
+
+}
+
+/* ===========================
+        Logo
+=========================== */
+
+.sidebar h2{
+
+  font-size:28px;
+
+  font-weight:800;
+
+  letter-spacing:.5px;
+
+  margin-bottom:28px;
+
+  background:linear-gradient(
+      90deg,
+      #38bdf8,
+      #60a5fa,
+      #818cf8
+  );
+
+  -webkit-background-clip:text;
+
+  -webkit-text-fill-color:transparent;
+
+}
+
+/* ===========================
+      Upload Button
+=========================== */
+
+.sidebar button{
+
+  width:100%;
+
+  padding:15px;
+
+  border:none;
+
+  border-radius:16px;
+
+  cursor:pointer;
+
+  font-size:15px;
+
+  font-weight:700;
+
+  color:white;
+
+  background:linear-gradient(
+      135deg,
+      #2563eb,
+      #4f46e5
+  );
+
+  transition:.35s;
+
+  box-shadow:
+
+  0 10px 25px
+  rgba(37,99,235,.35);
+
+}
+
+.sidebar button:hover{
+
+  transform:
+  translateY(-3px)
+  scale(1.02);
+
+  box-shadow:
+
+  0 20px 40px
+  rgba(37,99,235,.45);
+
+}
+
+/* ===========================
+      PDF Card
+=========================== */
+
+.pdf-list{
+
+  flex:1;
+
+  margin-top:25px;
+
+}
+
+.pdf-list>div{
+
+  background:
+
+  rgba(30,41,59,.75);
+
+  backdrop-filter:blur(16px);
+
+  border:
+
+  1px solid
+  rgba(255,255,255,.08);
+
+  border-radius:20px;
+
+  padding:18px;
+
+  transition:.35s;
+
+}
+
+.pdf-list>div:hover{
+
+  transform:translateY(-4px);
+
+  box-shadow:
+
+  0 20px 40px
+  rgba(0,0,0,.35);
+
+}
+
+/* ===========================
+        Footer
+=========================== */
+
+.footer{
+
+  margin-top:25px;
+
+  text-align:center;
+
+  font-size:13px;
+
+  color:#94a3b8;
+
+  border-top:1px solid
+  rgba(255,255,255,.08);
+
+  padding-top:18px;
+
+}
+
+/* ===========================
+      Main Area
+=========================== */
+
+.main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    overflow:hidden;
+}
+
+/* ===========================
+        Topbar
+=========================== */
+
+.topbar{
+
+  height:78px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  padding:0 35px;
+
+  background:
+
+  rgba(15,23,42,.55);
+
+  backdrop-filter:blur(18px);
+
+  border-bottom:
+
+  1px solid
+  rgba(255,255,255,.08);
+
+}
+/* ===================================
+         CHAT AREA
+=================================== */
+
+.chatbox{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(15,23,42,.45),
+        rgba(2,6,23,.75)
+    );
+}
+.messages{
+    flex:1;
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    min-height:0;
+
+    padding:35px;
+
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+
+    scroll-behavior:smooth;
+}
+
+/* Scrollbar */
+
+.messages::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.messages::-webkit-scrollbar-thumb{
+
+    background:#334155;
+
+    border-radius:50px;
+
+}
+
+.messages::-webkit-scrollbar-thumb:hover{
+
+    background:#475569;
+
+}
+
+/* ===================================
+         AI CARD
+=================================== */
+
+.bot{
+
+    max-width:78%;
+
+    align-self:flex-start;
+
+    padding:22px;
+
+    border-radius:22px;
+
+    background:
+
+    linear-gradient(
+        145deg,
+        rgba(30,41,59,.95),
+        rgba(15,23,42,.95)
+    );
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+
+    0 20px 45px rgba(0,0,0,.35);
+
+    transition:.35s;
+
+}
+
+.bot:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 30px 60px rgba(0,0,0,.45);
+
+}
+
+/* ===================================
+         USER CARD
+=================================== */
+
+.user{
+
+    max-width:78%;
+
+    align-self:flex-end;
+
+    padding:22px;
+
+    border-radius:22px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    color:white;
+
+    box-shadow:
+
+    0 20px 40px
+    rgba(37,99,235,.35);
+
+    transition:.35s;
+
+}
+
+.user:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ===================================
+         TEXT
+=================================== */
+
+.bot p,
+.user p{
+
+    line-height:1.9;
+
+    font-size:15px;
+
+    color:#e5e7eb;
+
+}
+
+.bot strong{
+
+    color:#60a5fa;
+
+}
+
+.bot h1,
+.bot h2,
+.bot h3{
+
+    color:white;
+
+    margin-bottom:12px;
+
+    margin-top:18px;
+
+}
+
+.bot ul,
+.bot ol{
+
+    margin-left:25px;
+
+    margin-top:10px;
+
+}
+
+.bot li{
+
+    margin-bottom:10px;
+
+}
+
+/* ===================================
+      CODE BLOCK
+=================================== */
+
+.bot pre{
+
+    background:#020617;
+
+    border-radius:15px;
+
+    padding:18px;
+
+    overflow:auto;
+
+    margin-top:15px;
+
+}
+
+.bot code{
+
+    color:#38bdf8;
+
+}
+/* ===================================
+        INPUT AREA
+=================================== */
+
+.input-area{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:22px 30px;
+
+    background:rgba(15,23,42,.65);
+
+    backdrop-filter:blur(18px);
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.input-area input{
+
+    flex:1;
+
+    padding:18px 22px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:18px;
+
+    background:#1e293b;
+
+    color:white;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.input-area input:focus{
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.35);
+
+    background:#243447;
+
+}
+
+/* ===================================
+        BUTTONS
+=================================== */
+
+.input-area button{
+
+    padding:16px 24px;
+
+    border:none;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #4f46e5
+    );
+
+    transition:.3s;
+
+    box-shadow:0 12px 30px rgba(37,99,235,.35);
+
+}
+
+.input-area button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 20px 40px rgba(37,99,235,.45);
+
+}
+
+/* ===================================
+      SUGGESTION BOX
+=================================== */
+
+.suggestion-box{
+
+    background:rgba(30,41,59,.75);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:22px;
+
+    margin-bottom:15px;
+
+}
+
+.suggestion-box h3{
+
+    color:#60a5fa;
+
+    margin-bottom:18px;
+
+    font-size:20px;
+
+}
+
+.suggestion-btn{
+
+    width:100%;
+
+    text-align:left;
+
+    padding:15px 18px;
+
+    margin-bottom:12px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#1e293b;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:15px;
+
+}
+
+.suggestion-btn:hover{
+
+    background:#2563eb;
+
+    transform:translateX(8px);
+
+}
+
+/* ===================================
+        ACTION BUTTONS
+=================================== */
+
+.action-btn{
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:#0f172a;
+
+    color:white;
+
+    transition:.3s;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.action-btn:hover{
+
+    background:#2563eb;
+
+    transform:translateY(-2px);
+
+}
+/* ===================================
+        PREMIUM EFFECTS
+=================================== */
+
+::selection{
+    background:#3b82f6;
+    color:white;
+}
+
+/* Smooth Animation */
+
+*{
+    transition:
+    background .25s ease,
+    color .25s ease,
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+/* Floating Animation */
+
+@keyframes floating{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-6px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+.pdf-list>div{
+
+    animation:floating 5s ease-in-out infinite;
+
+}
+
+/* Fade Animation */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.bot,
+.user,
+.suggestion-box{
+
+    animation:fadeIn .45s ease;
+
+}
+
+/* Glow */
+
+.sidebar h2{
+
+    text-shadow:
+
+    0 0 18px rgba(96,165,250,.45);
+
+}
+
+/* Upload Button Glow */
+
+.sidebar button{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.sidebar button::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-120%;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.28),
+
+        transparent
+
+    );
+
+    transition:.7s;
+
+}
+
+.sidebar button:hover::before{
+
+    left:120%;
+
+}
+
+/* Chat Bubble Hover */
+
+.bot:hover{
+
+    border-color:#60a5fa;
+
+}
+
+.user:hover{
+
+    filter:brightness(1.08);
+
+}
+
+/* Input Placeholder */
+
+.input-area input::placeholder{
+
+    color:#94a3b8;
+
+}
+
+/* Footer */
+
+.footer b{
+
+    color:#60a5fa;
+
+}
+
+/* Nice Shadow */
+
+.sidebar,
+.topbar,
+.bot,
+.user,
+.suggestion-box{
+
+    box-shadow:
+
+    0 12px 35px rgba(0,0,0,.30);
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .sidebar{
+
+        width:240px;
+
+    }
+
+    .bot,
+    .user{
+
+        max-width:90%;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .container{
+
+        flex-direction:column;
+
+    }
+
+    .sidebar{
+
+        width:100%;
+        height:auto;
+
+    }
+
+    .topbar{
+
+        padding:18px;
+
+    }
+
+    .messages{
+
+        padding:18px;
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE PATCH
+   Paste at the END of App.css
+========================================== */
+
+@media (max-width: 1024px) {
+
+  .sidebar{
+    width:260px;
+    padding:20px;
+  }
+
+  .topbar{
+    padding:0 20px;
+  }
+
+  .messages{
+    padding:20px;
+  }
+
+}
+
+
+@media (max-width:768px){
+
+html,
+body,
+#root{
+    height:100dvh;
+    overflow:hidden;
+}
+
+.container{
+    flex-direction:column;
+    height:100dvh;
+}
+
+.sidebar{
+
+    width:100%;
+    height:auto;
+
+    padding:18px;
+
+    border-right:none;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.sidebar h2{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.footer{
+    display:none;
+}
+
+.main{
+    flex:1;
+    min-height:0;
+}
+
+.topbar{
+
+    height:60px;
+
+    padding:0 15px;
+}
+
+.topbar h2{
+    font-size:18px;
+}
+
+.chatbox{
+    flex:1;
+    min-height:0;
+}
+
+.messages{
+
+    flex:1;
+
+    padding:15px;
+
+    gap:15px;
+}
+
+.bot,
+.user{
+
+    max-width:100%;
+
+    padding:16px;
+
+    font-size:14px;
+}
+
+.input-area{
+
+    flex-wrap:wrap;
+
+    padding:15px;
+
+    gap:10px;
+}
+
+.input-area input{
+
+    width:100%;
+
+    flex:100%;
+
+    padding:15px;
+}
+
+.input-area button{
+
+    flex:1;
+
+    min-width:120px;
+}
+
+.action-btn{
+
+    flex:1;
+}
+
+.suggestion-btn{
+
+    font-size:14px;
+}
+
+}
+
+
+@media (max-width:480px){
+
+.sidebar{
+
+    padding:15px;
+}
+
+.sidebar h2{
+
+    font-size:20px;
+}
+
+.topbar h2{
+
+    font-size:16px;
+}
+
+.messages{
+
+    padding:12px;
+}
+
+.bot,
+.user{
+
+    padding:14px;
+
+    border-radius:16px;
+}
+
+.input-area{
+
+    padding:12px;
+}
+
+.input-area button{
+
+    width:100%;
+}
+
+.action-btn{
+
+    width:100%;
+}
+
+}
